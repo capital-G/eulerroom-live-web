@@ -24,9 +24,6 @@ function EventHeader({
         The performance should be related to SuperCollider in some way, although it is not limited to musical performances but can also be talks or other kind of performances.
       </p>
       <p>
-        The performances need to be transmitted as video streams which can be created via e.g. OBS - you can take a look at the <a href="https://docs.google.com/document/d/1hiaT4YEmqF5s6IkYySfhE9Hu1oopOGcVUG2E4DvyKWM/edit?tab=t.0#heading=h.5a80sytf8fg4">setup guide</a>.
-      </p>
-      <p>
         The event will be happening on 2025-07-26 from UTC 00:00 to UTC 23:59.
         For for your timezone {Intl.DateTimeFormat().resolvedOptions().timeZone} this relates to 
         {" "}
@@ -35,7 +32,8 @@ function EventHeader({
         - {event && DateTime.fromISO(event.ends_at).toFormat("dd. LLLL HH:mm")}.
       </p>
       <p>
-        The performances are broadcasted via <a href="https://live.eulerroom.com">live.eulerroom.com</a>, which has been kindly provided by <a href="https://blog.toplap.org/">toplap</a> - consider donating to them via <a href="https://opencollective.com/toplap">OpenCollective</a>.
+        The performances need to be transmitted as video streams which can be created via e.g. OBS - you can take a look at the <a href="https://docs.google.com/document/d/1hiaT4YEmqF5s6IkYySfhE9Hu1oopOGcVUG2E4DvyKWM/edit?tab=t.0#heading=h.5a80sytf8fg4">setup guide</a>.
+        The performances are broadcasted via <a href="https://live.eulerroom.com">live.eulerroom.com</a>, which has been kindly provided by <a href="https://blog.toplap.org/">TOPLAP</a> - consider donating to them via <a href="https://opencollective.com/toplap">OpenCollective</a>.
       </p>
       {/* {!event?.active && (
         <h4 style={{ color: "darkred" }}>
