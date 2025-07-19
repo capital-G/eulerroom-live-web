@@ -94,7 +94,7 @@ function PerformanceCreateForm({
           />
           <textarea
             id="description"
-            placeholder="Description (used for archive videos)"
+            placeholder="Description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             rows={3}
@@ -108,7 +108,7 @@ function PerformanceCreateForm({
             onChange={(e) => setLocation(e.target.value)}
             required
           />
-          <input type="submit" className="card-button" value="Rave On" />
+          <input type="submit" className="card-button" value="Submit" />
         </form>
       )}
     </>

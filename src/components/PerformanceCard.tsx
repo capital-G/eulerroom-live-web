@@ -58,9 +58,9 @@ const PerformanceCard = ({
   return (
     <div className="card">
       <div className="card-body">
-        <p className="card-header">{muxyStream.slot_stop==muxyStream.slot_start ? ("Cycle #"+muxyStream.slot_start) : ("Cycles #"+muxyStream.slot_start+"-#"+muxyStream.slot_stop)}</p>
+        <p className="card-header">{muxyStream.slot_stop==muxyStream.slot_start ? ("Performance #"+muxyStream.slot_start) : ("Performances #"+muxyStream.slot_start+"-#"+muxyStream.slot_stop)}</p>
         <p className="card-time">
-          {startsAtHs}-{endsAtHs}{" "}
+          {startsAtHs} - {endsAtHs}{" "}
           {active && !inCreateMode && !text && (
             <button
               className="card-button-plus"

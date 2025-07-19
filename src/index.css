@@ -1,7 +1,11 @@
-@import url("https://rsms.me/inter/inter.css");
+:root {
+  --color-bg: # ;
+  --color-text: #111;
+  --color-highlight: #e83e8c;
+}
 
 html {
-  background: #000;
+  background: var(--color-bg);
   line-height: 0.5;
   margin: 0 auto;
 }
@@ -9,11 +13,11 @@ html {
 body {
   margin: 0;
   font-kerning: normal;
-  font-family: "Inter", sans-serif;
+  font-family: monospace;
   letter-spacing: -0.85px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #fff;
+  color: var(--color-text);
 }
 
 main {
@@ -26,20 +30,20 @@ code {
 }
 
 h2 {
-  color: #fff;
+  color: var(--color-text);
 }
 
 h1,
 h2,
 h3 {
-  font-size: 200%;
+  /* font-size: 100%; */
   font-weight: 800;
   margin: 0 auto;
   line-height: 1.5;
 }
 
 h1 {
-  font-size: 500%;
+  /* font-size: 100%; */
 }
 
 
@@ -47,20 +51,14 @@ p {
   line-height: 1.5;
 }
 
-p.link-paragraph {
-  margin: 4px;
-  padding: 8px;
-  letter-spacing: -0.85px;
-}
-
 a {
-  color: #fff;
-  font-size: 80%;
+  color: var(--color-highlight);
+  font-size: 100%;
 }
 
 hr {
   width: 30%;
-  border: 2px solid #fff;
+  border: 2px solid var(--color-bg);
 }
 
 img {
@@ -78,31 +76,28 @@ textarea {
   margin-bottom: 8px;
 }
 
-.App {
-  text-align: center;
-}
-
 .App-logo {
-  height: 40vmin;
+  width: 20vmin;
   pointer-events: none;
 }
 
 .App-header {
-  min-height: 75vh;
+  /* min-height: 75vh; */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(2px + 2vmin);
+  font-size: 130%;
+  /* font-size: calc(2px + 2vmin); */
+  max-width: 1000px;
+  margin: auto;
 }
 
 .wrapper {
-  width: 24%;
+  width: 100%;
 }
 
 .label {
   font-size: 100%;
   font-weight: bold;
-  color: #fff;
+  color: var(--color-bg);
   vertical-align: text-bottom;
 }

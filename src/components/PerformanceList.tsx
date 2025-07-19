@@ -14,7 +14,7 @@ interface Props {
   setTotalStreamCount: (ttalStreamCount: number | null) => void;
 }
 
-const SLOT_DURATION_MIN = 15;
+const SLOT_DURATION_MIN = 20;
 
 const PerformanceList = ({
   slug,
@@ -107,12 +107,13 @@ const PerformanceList = ({
     return allSlots;
   }, [endsAt, muxyStreams, startsAt]);
 
-  const usedSlots = allStreams.map((x) => x.used).reduce((a, b) => a + b, 0);
+  // somehow broken so skipped
+  // const usedSlots = allStreams.map((x) => x.used).reduce((a, b) => a + b, 0);
 
-  setReservedStreamCount(usedSlots);
-  setTotalStreamCount(
-    endsAtDt.diff(startsAtDt).milliseconds / 1000 / 60 / SLOT_DURATION_MIN
-  );
+  // setReservedStreamCount(usedSlots);
+  // setTotalStreamCount(
+  //   endsAtDt.diff(startsAtDt).milliseconds / 1000 / 60 / SLOT_DURATION_MIN
+  // );
 
   return (
     <div className="performance-list">
