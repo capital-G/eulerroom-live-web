@@ -25,7 +25,7 @@ function EventHeader({
       </p>
       <p>
         The event will be happening on 2025-07-26 from UTC 00:00 to UTC 23:59.
-        For for your timezone {Intl.DateTimeFormat().resolvedOptions().timeZone} this relates to 
+        For your timezone {Intl.DateTimeFormat().resolvedOptions().timeZone} this relates to 
         {" "}
         {event &&
           DateTime.fromISO(event.starts_at).toFormat("dd. LLLL HH:mm")}{" "}
