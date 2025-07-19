@@ -22,8 +22,6 @@ const PerformanceList = ({
   startsAt,
   endsAt,
   active,
-  setReservedStreamCount,
-  setTotalStreamCount,
 }: Props): ReactElement => {
   const muxyApiKey: string = import.meta.env.VITE_MUXY_API_KEY as string;
   const muxyUrl: string = import.meta.env.VITE_MUXY_URL as string;

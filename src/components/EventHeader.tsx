@@ -1,4 +1,3 @@
-import ProgressBar from "@ramonak/react-progress-bar";
 import { DateTime } from "luxon";
 import { ReactElement } from "react";
 import logo from "../assets/images/sc_logo.svg";
@@ -10,36 +9,10 @@ interface Props {
   totalStreamCount: number | null;
 }
 
-interface ProgressType {
-  reserved: number;
-  total: number;
-  percent: number;
-}
 
 function EventHeader({
   event,
-  reservedStreamCount,
-  totalStreamCount,
 }: Props): ReactElement {
-  const calcProgressbar = (
-    reservedStreamCount: number | null,
-    totalStreamCount: number | null
-  ): ProgressType => {
-    if (reservedStreamCount === null || totalStreamCount === null) {
-      return { reserved: 0, total: 0, percent: 0 };
-    }
-
-    return {
-      reserved: reservedStreamCount,
-      total: totalStreamCount,
-      percent: (reservedStreamCount * 100) / totalStreamCount,
-    };
-  };
-
-  const progressBarValues = calcProgressbar(
-    reservedStreamCount,
-    totalStreamCount
-  );
 
   return (
     <header className="App-header">
